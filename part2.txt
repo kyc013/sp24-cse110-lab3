@@ -8,6 +8,7 @@ Question 6 Passcode: ThisIsJS
 'Question 7 Passcode: YouFoundMe'
 Question 8 passcode: coolcoolcool
 Question 9 passcode: 2020sucked
+'Press Me'
 btn.addEventListener('click', () => {
   fetch('./question10.jpg');
 });
