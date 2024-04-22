@@ -1,21 +1,21 @@
-/* Color /
+/* Color */
 h1 {
-  color: blue; / applying color to heading */
+  color: blue; /* applying color to heading */
 }
 
-/* Background /
+/* Background */
 body {
-  background-color: #f5f5f5; / applying background color */
+  background-color: #f5f5f5; /* applying background color */
 }
 
-/* Unit /
+/* Unit */
 p {
-  font-size: 1rem; / relative unit /
-  margin: 10px; / absolute unit */
+  font-size: 1rem; /* relative unit */
+  margin: 10px; /* absolute unit */
 }
 
-/* Box Model /
-/ Margin (longhand) */
+/* Box Model */
+/* Margin (longhand) */
 h2 {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -23,9 +23,9 @@ h2 {
   margin-right: 10px;
 }
 
-/* Margin (shorthand) /
+/* Margin (shorthand) */
 p {
-  margin: 10px 20px; / top, right, bottom, left */
+  margin: 10px 20px; /* top, right, bottom, left */
 }
 
 /* Padding (longhand) */
@@ -36,25 +36,25 @@ section {
   padding-right: 20px;
 }
 
-/* Padding (shorthand) /
+/* Padding (shorthand) */
 ul {
-  padding: 5px 10px; / top, right, bottom, left */
+  padding: 5px 10px; /* top, right, bottom, left */
 }
 
-/* Borders /
+/* Borders */
 h3 {
-  border: 1px solid #000; / border style and color /
-  border-radius: 5px; / border radius */
+  border: 1px solid #000; /* border style and color */
+  border-radius: 5px; /* border radius */
 }
 
-/* Text /
+/* Text */
 ol {
-  color: red; / text color */
+  color: red; /* text color */
 }
 
-/* Display /
+/* Display */
 nav ul {
-  display: inline-block; / applying inline-block display */
+  display: inline-block; /* applying inline-block display */
 }
 
 /* Sizing */
@@ -63,16 +63,16 @@ img {
   width: 100px;
 }
 
-/* Position /
+/* Position */
 footer {
-  position: fixed; / applying fixed position */
+  position: fixed; /* applying fixed position */
   bottom: 0;
 }
 
-/* Pseudo-class /
+/* Pseudo-class */
 a:hover {
-  text-decoration: underline; / underline on hover /
+  text-decoration: underline; /* underline on hover */
 }
 a:active {
-  color: red; / color change on click */
+  color: red; /* color change on click */
 }
