@@ -1,78 +1,60 @@
-/* Color */
+/* Class Selector (.class) */
+p {
+  font-size: 1rem;
+  margin: 10px;
+}
+
+/* ID Selector (#id) */
+#intro {
+  font-weight: bold;
+}
+
+/* Element Selector (element) */
 h1 {
-  color: blue; /* applying color to heading */
+  color: blue;
 }
 
-/* Background */
 body {
-  background-color: #f5f5f5; /* applying background color */
+  background-color: #f5f5f5;
 }
 
-/* Unit */
-p {
-  font-size: 1rem; /* relative unit */
-  margin: 10px; /* absolute unit */
-}
-
-/* Box Model */
-/* Margin (longhand) */
-h2 {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-/* Margin (shorthand) */
-p {
-  margin: 10px 20px; /* top, right, bottom, left */
-}
-
-/* Padding (longhand) */
 section {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin: 20px;
 }
 
-/* Padding (shorthand) */
 ul {
-  padding: 5px 10px; /* top, right, bottom, left */
+  list-style-type: square;
 }
 
-/* Borders */
-h3 {
-  border: 1px solid #000; /* border style and color */
-  border-radius: 5px; /* border radius */
-}
-
-/* Text */
 ol {
-  color: red; /* text color */
+  color: red;
 }
 
-/* Display */
-nav ul {
-  display: inline-block; /* applying inline-block display */
+nav {
+  text-align: center;
 }
 
-/* Sizing */
 img {
-  height: 100px;
-  width: 100px;
+  max-width: 100%;
 }
 
-/* Position */
 footer {
-  position: fixed; /* applying fixed position */
+  position: fixed;
   bottom: 0;
 }
 
-/* Pseudo-class */
+/* Pseudo-class Selector (e.g. p:hover) */
 a:hover {
-  text-decoration: underline; /* underline on hover */
+  text-decoration: underline;
 }
-a:active {
-  color: red; /* color change on click */
+
+/* Descendant Combinator (element element) */
+nav ul {
+  margin: 0;
+}
+
+/* Combining Two Selectors (element.class) */
+h3.border {
+  border: 1px solid #000;
+  border-radius: 5px;
 }
