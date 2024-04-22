@@ -1,6 +1,6 @@
 # Standup Notes
 
-## Date: [Date]
+## Date: 4/21/2024
 
 ### Team Members Present:
 - [Team Member 1]
