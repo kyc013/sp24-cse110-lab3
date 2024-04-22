@@ -1,0 +1,90 @@
+<style>
+    /* Apply colors to HTML elements */
+    body {
+        background-color: #f0f0f0; /* light gray background */
+        color: rgb(50, 50, 50); /* dark gray text color */
+    }
+
+    /* CSS Variables with fallback */
+    :root {
+        --main-color: green;
+    }
+
+    h1 {
+        color: var(--main-color, black); /* Green color with fallback to black */
+    }
+
+    /* Background styles */
+    header {
+        background-color: #333; /* dark gray background for header */
+    }
+
+    /* Units of measurement */
+    main {
+        width: 80%; /* 80% of the parent element width */
+        padding: 10px; /* 10 pixels padding inside the element */
+    }
+
+    /* Box Model - margin, padding, border */
+    section {
+        margin: 10px; /* 10 pixels margin around the section */
+        padding: 20px; /* 20 pixels padding inside the section */
+        border: 1px solid black; /* 1 pixel solid black border around the section */
+    }
+
+    /* Text styling */
+    h1, h2 {
+        text-align: center; /* Center align heading elements */
+    }
+
+    p {
+        text-decoration: underline; /* Underline paragraphs */
+    }
+
+    /* Display properties */
+    nav ul {
+        display: inline-block; /* Display as inline-block */
+    }
+
+    aside {
+        display: block; /* Display as block element */
+    }
+
+    /* Sizing */
+    img {
+        width: 100%; /* Image width 100% of its container */
+        max-width: 500px; /* Maximum image width 500 pixels */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    /* Positioning */
+    footer {
+        position: sticky; /* Sticky position for footer */
+        bottom: 0; /* Stick to the bottom of the viewport */
+    }
+
+    /* Pseudo-classes */
+    a:hover {
+        color: blue; /* Change link color on hover */
+    }
+
+    /* Grid for layouts */
+    main {
+        display: grid; /* Use grid layout */
+        grid-template-columns: 1fr 2fr; /* Divide main section into 1:2 layout */
+        gap: 10px; /* Gap between grid items */
+    }
+
+    /* Media Query for responsiveness */
+    @media only screen and (max-width: 600px) {
+        /* Styles for screens smaller than 600px */
+        body {
+            font-size: 14px; /* Smaller font size for smaller screens */
+        }
+    }
+
+    /* Fonts */
+    body {
+        font-family: 'Roboto', sans-serif; /* Use Google font Roboto */
+    }
+</style>
