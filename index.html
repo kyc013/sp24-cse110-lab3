@@ -4,8 +4,13 @@
   <meta charset="UTF-8">
   <title>Lab 3</title>
   <link rel="icon" href="favicon.ico">
-  
-<link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="style.css"> <!-- linking external stylesheet -->
+  <style>
+    footer {
+      background-color: #333; /* applying background color via <style> element */
+      color: #fff; /* text color */
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -58,7 +63,7 @@
     </section>
   </main>
   <footer>
-    <p>&copy; 2024 Kyungwoo Choi. All rights reserved.</p>
+    <p>© 2024 Kyungwoo Choi. All rights reserved.</p>
   </footer>
   <hr>
   <img src="screenshots/example.png" alt="Example Image"> <br>
@@ -80,21 +85,7 @@
       <input type="radio" id="male" name="gender" value="male">
       <input type="date" id="meetingDate" name="meetingDate">
       <textarea rows="4" cols="50"></textarea>
-      <datalist id="browsers">
-        <option value="Chrome">
-        <option value="Firefox">
-        <option value="Edge">
-      </datalist>
-      <select>
-        <option value="Option 1">Option 1</option>
-        <option value="Option 2">Option 2</option>
-      </select>
-      <button type="submit">Submit</button>
     </fieldset>
-    // <style> Element
-<style> footer { background-color: #333; /* applying background color via <style> element */ color: #fff; /* text color */ } </style>
-    // Inline CSS
-<button style="background-color: green;">Click Me</button>
   </form>
 </body>
 </html>
