@@ -121,7 +121,7 @@ p {
 }
 
 /* Attribute Selector (e.g. [attribute=foo]) */
-img[src="example.jpg"] {
+img[src="screenshots/example.png"] {
     width: 100%;
 }
 
