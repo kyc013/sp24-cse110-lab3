@@ -60,7 +60,10 @@ body {
 }
 
 /* Position */
-.position-style {
+.position-static {
+    position: static;
+}
+.position-relative {
     position: relative;
 }
 
@@ -69,14 +72,31 @@ body {
     background-color: #007bff;
 }
 
-/* Layouts */
+.button:active {
+    background-color: #0056b3;
+}
+
+/* Flexbox */
 .flex-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
 }
+.flex-item {
+    flex: 1;
+}
+
+/* Grid */
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+.grid-item {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #999;
 }
 
 /* Query based on screen width */
