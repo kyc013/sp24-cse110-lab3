@@ -44,8 +44,9 @@ p {
     display: none;
 }
 
-.block {
-    display: block;
+.flex {
+    display: flex;
+    justify-content: center;
 }
 
 /* Sizing */
@@ -77,15 +78,18 @@ button:hover {
 .flex-container {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    gap: 20px;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
 }
 
 /* Responsive Layout */
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .container {
         margin: 5px;
         padding: 10px;
