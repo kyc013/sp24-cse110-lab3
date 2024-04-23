@@ -115,6 +115,16 @@ body {
     font-weight: bold;
 }
 
+/* ID Selector */
+#unique-id {
+    color: red;
+}
+
+/* Universal Selector */
+* {
+    box-sizing: border-box;
+}
+
 /* Element Selector (element) */
 p {
     color: #333;
@@ -123,6 +133,11 @@ p {
 /* Attribute Selector (e.g. [attribute=foo]) */
 img[src="screenshots/example.png"] {
     width: 100%;
+}
+
+/* Pseudo-class Selector */
+p:hover {
+    background-color: lightblue;
 }
 
 /* Selector List (element, element) */
