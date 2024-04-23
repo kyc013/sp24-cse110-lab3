@@ -1,65 +1,96 @@
-/* ID Selector (#id) */
-#agenda {
-    color: blue;
+/* Color */
+body {
+    color: #333333;
 }
 
-/* Universal Selector (*) */
-* {
-    font-family: Arial, sans-serif;
+/* Css variables & fallbacks */
+:root {
+    --main-color: #ff0000; /* CSS Variable */
 }
 
-/* Element Selector (element) */
 h1 {
-    text-align: center;
+    color: var(--main-color, #000000); /* Using CSS variable with fallback */
 }
 
-/* Attribute Selector (e.g. [attribute=foo]) */
-[alt="Example Image"] {
+/* Background color */
+body {
+    background-color: #f4f4f4;
+}
+
+/* Unit */
+h2 {
+    font-size: 2em; /* Relative unit */
+    padding: 20px; /* Absolute unit */
+    margin: 1rem; /* Relative unit */
+    border: 2px solid #333; /* Absolute unit */
+}
+
+/* Box model */
+.container {
+    margin: 10px 5px;
+    padding: 15px;
     border: 1px solid #ccc;
 }
 
-/* Pseudo-class Selector (e.g. p:hover) */
-p:hover {
-    background-color: lightgrey;
+/* Text */
+p {
+    color: blue;
+    text-decoration: underline;
+    text-align: center;
 }
 
-/* Selector List (element, element) */
-h2, h3 {
-    margin-bottom: 10px;
+/* Display */
+.hidden {
+    display: none;
 }
 
-/* Combinators */
-/* Descendant Combinator (element element) */
-section ul {
-    list-style-type: square;
+.block {
+    display: block;
 }
 
-/* Child Combinator (element > element) */
-nav > ul {
-    padding: 0;
+/* Sizing */
+img {
+    width: 100px;
+    height: 100px;
+    max-width: 300px;
+    min-width: 50px;
 }
 
-/* General sibling combinator (element ~ element) */
-h3 ~ p {
-    color: green;
+/* Position */
+.absolute {
+    position: absolute;
+    top: 50px;
+    left: 50px;
 }
 
-/* Adjacent sibling combinator (element + element) */
-ol + p {
-    font-style: italic;
+.sticky {
+    position: sticky;
+    top: 0;
 }
 
-/* Combining Two Selectors (element.class) */
-h2.meeting-header {
-    color: red;
+/* Pseudo-class */
+button:hover {
+    background-color: lightblue;
 }
 
-/* :has() - This is not supported in CSS yet */
+/* Layouts */
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+}
 
-/* Nested Selectors */
-details summary {
-    font-weight: bold;
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
-details p {
-    font-style: italic;
+
+/* Responsive Layout */
+@media only screen and (max-width: 600px) {
+    .container {
+        margin: 5px;
+        padding: 10px;
+    }
 }
+
+/* Include third party font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
