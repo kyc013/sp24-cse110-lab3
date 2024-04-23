@@ -1,100 +1,142 @@
 /* Color */
 body {
-    color: #333333;
+    background-color: #f0f0f0;
+    color: #333;
 }
 
-/* Css variables & fallbacks */
+/* CSS variables & fallbacks */
 :root {
-    --main-color: #ff0000; /* CSS Variable */
+    --main-color: #007bff;
 }
-
-h1 {
-    color: var(--main-color, #000000); /* Using CSS variable with fallback */
+#fallback-example {
+    color: var(--main-color, blue);
 }
 
 /* Background color */
-body {
-    background-color: #f4f4f4;
+.container {
+    background-color: #fff;
 }
 
 /* Unit */
-h2 {
-    font-size: 2em; /* Relative unit */
-    padding: 20px; /* Absolute unit */
-    margin: 1rem; /* Relative unit */
-    border: 2px solid #333; /* Absolute unit */
+.relative-units {
+    padding: 1rem;
+    margin: 2em;
+    border: 1px solid #ccc;
+}
+.absolute-units {
+    padding: 20px;
+    margin: 50px;
+    border: 2px solid #333;
 }
 
 /* Box model */
-.container {
-    margin: 10px 5px;
-    padding: 15px;
-    border: 1px solid #ccc;
+.box {
+    margin: 10px 20px;
+    padding: 15px 30px;
+    border: 1px solid #999;
 }
 
 /* Text */
-p {
-    color: blue;
+.text-style {
+    color: #333;
     text-decoration: underline;
     text-align: center;
 }
 
 /* Display */
-.hidden {
+.display-none {
     display: none;
 }
-
-.flex {
-    display: flex;
-    justify-content: center;
+.display-inline {
+    display: inline-block;
 }
 
 /* Sizing */
-img {
-    width: 100px;
-    height: 100px;
-    max-width: 300px;
-    min-width: 50px;
+.div-size {
+    height: 200px;
+    width: 300px;
+    max-width: 80%;
+    min-width: 100px;
 }
 
 /* Position */
-.absolute {
-    position: absolute;
-    top: 50px;
-    left: 50px;
-}
-
-.sticky {
-    position: sticky;
-    top: 0;
+.position-style {
+    position: relative;
 }
 
 /* Pseudo-class */
-button:hover {
-    background-color: lightblue;
+.button:hover {
+    background-color: #007bff;
 }
 
 /* Layouts */
 .flex-container {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 20px;
+    justify-content: space-between;
 }
-
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
 }
 
-/* Responsive Layout */
-@media screen and (max-width: 600px) {
+/* Query based on screen width */
+@media only screen and (max-width: 600px) {
     .container {
-        margin: 5px;
-        padding: 10px;
+        font-size: 14px;
     }
 }
 
-/* Include third party font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* Third party font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+/* Class Selector (.class) */
+.title {
+    font-weight: bold;
+}
+
+/* Element Selector (element) */
+p {
+    color: #333;
+}
+
+/* Attribute Selector (e.g. [attribute=foo]) */
+img[src="example.jpg"] {
+    width: 100%;
+}
+
+/* Selector List (element, element) */
+article, aside {
+    margin: 10px;
+}
+
+/* Combinators */
+/* Descendant Combinator (element element) */
+header nav {
+    background-color: #333;
+}
+
+/* Child Combinator (element > element) */
+ul > li {
+    list-style-type: circle;
+}
+
+/* General sibling combinator (element ~ element) */
+h2 ~ p {
+    font-style: italic;
+}
+
+/* Adjacent sibling combinator (element + element) */
+h2 + p {
+    font-weight: bold;
+}
+
+/* Combining Two Selectors (element.class) */
+section.container {
+    border: 1px solid #ccc;
+}
+
+/* Nested Selectors */
+main section p {
+    font-size: 14px;
+}
