@@ -156,6 +156,10 @@ section.container {
     border: 1px solid #ccc;
 }
 
+div:has(p) {
+    background-color: lightblue;
+}
+
 /* Nested Selectors */
 main section p {
     font-size: 14px;
